@@ -4,10 +4,11 @@
 #     - build-tools-19.1.0
 #     - android-19
 
+# script:
+#   - echo hello
+  
 script:
   - echo hello
-  
-before_deploy:
   - git clone -b test https://github.com/giltsl/travis-test.git
   - cd travis-test
   - gem build dpl.gemspec

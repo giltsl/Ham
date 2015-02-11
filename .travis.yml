@@ -10,7 +10,8 @@ script:
   - gem build dpl.gemspec
   - rvm 2.1 do ruby -S gem install dpl-*.gem
   - cd ..
-  - dpl --provider=testfairy
+  - find / -name dpl
+  # - dpl --provider=testfairy
 
 # before_deploy:
 #   git clone -b test https://github.com/giltsl/travis-test.git

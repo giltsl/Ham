@@ -8,7 +8,8 @@ script:
   - git clone -b test https://github.com/giltsl/travis-test.git
   - cd travis-test
   - gem build dpl.gemspec
-  - rvm 2.1 do ruby -S gem install dpl-*.gem
+  # - rvm 2.1 do ruby -S gem install dpl-*.gem
+  - ruby -S gem install dpl-*.gem
   - cd ..
   # - /home/travis/build/giltsl/Ham/travis-test/bin/dpl --provider=testfairy
   # - dpl --provider=testfairy

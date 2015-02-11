@@ -15,9 +15,7 @@ script:
   # - rvm 2.1 do ruby -S gem install dpl-*.gem
   - ruby -S gem install dpl-*.gem
   - cp *.gem ..
-  - ls
   - cd ..
-  - ls
   # - /home/travis/build/giltsl/Ham/travis-test/bin/dpl --provider=appfog
 
 # before_deploy:

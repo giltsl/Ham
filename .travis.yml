@@ -19,7 +19,7 @@ script:
 #   rvm 2.1 do ruby -S gem install dpl-*.gem
 #   cd ..
 
-# deploy:
-#   provider: testfairy
-#   on:
-#     all_branches: true
+deploy:
+  provider: testfairy
+  on:
+    all_branches: true

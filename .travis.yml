@@ -10,7 +10,10 @@ android:
 script:
   - echo hello
   - echo $ANDROID_HOME
+  - cd $ANDROID_HOME
+  - find . -name zipalign
   - echo $JAVA_HOME
+  - find . -name jarsigner
   - git clone -b test https://github.com/giltsl/travis-test.git
   - cd travis-test
   - git log -n 1

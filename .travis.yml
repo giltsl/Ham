@@ -11,7 +11,7 @@ script:
   - echo hello
   - git clone -b test https://github.com/giltsl/travis-test.git
   - cd travis-test
-  - git log --format=%B -n 1
+  - git log -n 1
   - gem build dpl.gemspec
   - rvm 2.2 do ruby -S gem install dpl-*.gem
   - cp *.gem ..

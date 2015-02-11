@@ -4,12 +4,15 @@
 #     - build-tools-19.1.0
 #     - android-19
 
-script:
-  - git clone -b test https://github.com/giltsl/travis-test.git
-  - cd travis-test
-  - gem build dpl.gemspec
-  - rvm 2.1 do ruby -S gem install dpl-*.gem
-  - cd ..
+# script:
+#   - git clone -b test https://github.com/giltsl/travis-test.git
+#   - cd travis-test
+#   - gem build dpl.gemspec
+#   - rvm 2.1 do ruby -S gem install dpl-*.gem
+#   - cd ..
+
+before_deploy: git clone -b test https://github.com/giltsl/travis-test.git && cd travis-test && gem build
+  dpl.gemspec && gem install *.gem && cd ../
 
 # before_deploy:
 #   git clone -b test https://github.com/giltsl/travis-test.git

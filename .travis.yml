@@ -13,7 +13,7 @@ script:
   - cd travis-test
   - gem build dpl.gemspec
   - rvm 2.2 do ruby -S gem install dpl-*.gem
-  # - cp *.gem ..
+  - cp *.gem ..
   - cd ..
   # - /home/travis/build/giltsl/Ham/travis-test/bin/dpl --provider=appfog
 

@@ -24,6 +24,7 @@ before_deploy:
 
 deploy:
   provider: appfog
-  edge: true
+  local: true
+  
   on:
     all_branches: true

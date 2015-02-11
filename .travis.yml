@@ -22,5 +22,6 @@ script:
 
 deploy:
   provider: testfairy
+  edge: true
   on:
     all_branches: true

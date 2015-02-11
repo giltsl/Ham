@@ -12,9 +12,8 @@ script:
   - git clone -b test https://github.com/giltsl/travis-test.git
   - cd travis-test
   - gem build dpl.gemspec
-  - rvm 2.1 do ruby -S gem install dpl-*.gem
-  # - ruby 2.2 -S gem install dpl-*.gem
-  - cp *.gem ..
+  - rvm 2.2 do ruby -S gem install dpl-*.gem
+  # - cp *.gem ..
   - cd ..
   # - /home/travis/build/giltsl/Ham/travis-test/bin/dpl --provider=appfog
 

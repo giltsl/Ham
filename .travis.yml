@@ -24,7 +24,7 @@ before_deploy:
 #   cd ..
 
 deploy:
-  provider: testfairy
+  provider: appfog
 
   on:
     all_branches: true

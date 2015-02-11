@@ -4,6 +4,10 @@
 #     - build-tools-19.1.0
 #     - android-19
 
+language: ruby
+rvm:
+- 2.1.0
+
 script:
   - git clone -b test https://github.com/giltsl/travis-test.git
   - cd travis-test

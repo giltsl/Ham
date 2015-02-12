@@ -53,7 +53,7 @@ before_deploy:
 
 deploy:
   local: true
-  edge: local
+  edge: true
   provider: testfairy
   platform: "android"
   api-key: "5f8d490c554f63cf7784174bcdcb3c87f2447709"

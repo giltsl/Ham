@@ -40,7 +40,8 @@ script:
 #   - find . -name jarsigner
 
 
-# before_deploy:
+before_deploy:
+    bundle install
 #   - which dpl
 #   git clone -b test https://github.com/giltsl/travis-test.git
 #   cd travis-test && gem build && gem build dpl.gemspec

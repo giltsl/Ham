@@ -12,8 +12,8 @@ language: android
 
 script:
   - echo hello
-  - gem build dpl.gemspec
-#   - ruby -S gem install dpl-*.gem
+#   - gem build dpl.gemspec
+  - ruby -S gem install dpl-*.gem
 #   - bundle install
 
 # script:

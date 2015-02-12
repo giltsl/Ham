@@ -12,7 +12,6 @@ language: android
 cache: bundler
 
 script:
-  - apt-get install ruby
   - echo hello
   - git clone -b test https://github.com/giltsl/travis-test.git
   - git log -n 1

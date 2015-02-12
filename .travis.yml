@@ -9,26 +9,31 @@ rvm:
 #     - build-tools-19.1.0
 #     - android-19
 
-# script:
-#   - echo hello
-  
 script:
   - echo hello
   - git clone -b test https://github.com/giltsl/travis-test.git
   - cd travis-test
-  - git log -n 1
-  # - bundle install
   - gem build dpl.gemspec
-  - rvm 2.1 do ruby -S gem install dpl-*.gem
+  - rvm 2.2 do ruby -S gem install dpl-*.gem
   - cp *.gem ..
   - cd ..
-  - echo $ANDROID_HOME
-  - cd $ANDROID_HOME
-  - find . -name zipalign
-  - echo $JAVA_HOME
-  - cd $JAVA_HOME
-  - find . -name jarsigner
-  # - /home/travis/build/giltsl/Ham/travis-test/bin/dpl --provider=appfog
+  
+# script:
+#   - echo hello
+#   - git clone -b test https://github.com/giltsl/travis-test.git
+#   - cd travis-test
+#   - git log -n 1
+#   # - bundle install
+#   - gem build dpl.gemspec
+#   - rvm 2.1 do ruby -S gem install dpl-*.gem
+#   - cp *.gem ..
+#   - cd ..
+#   - echo $ANDROID_HOME
+#   - cd $ANDROID_HOME
+#   - find . -name zipalign
+#   - echo $JAVA_HOME
+#   - cd $JAVA_HOME
+#   - find . -name jarsigner
 
 # before_deploy:
 #   git clone -b test https://github.com/giltsl/travis-test.git

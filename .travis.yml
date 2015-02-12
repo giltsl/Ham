@@ -1,9 +1,9 @@
-language: ruby
-rvm:
+# language: ruby
+# rvm:
     # - 2.1
-    - 2.2
+    # - 2.2
 
-language: android
+# language: android
 # android:
 #   components:
 #     - build-tools-19.1.0

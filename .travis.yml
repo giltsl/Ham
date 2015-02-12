@@ -3,20 +3,22 @@
     # - 2.1
     # - 2.2
 
-# language: android
+language: android
 # android:
 #   components:
 #     - build-tools-19.1.0
 #     - android-19
 
 script:
+  - apt-get install ruby
   - echo hello
   - git clone -b test https://github.com/giltsl/travis-test.git
   - git log -n 1
   - cd travis-test
   - bundle install
   - gem build dpl.gemspec
-  - rvm 2.2 do ruby -S gem install dpl-*.gem
+  - ruby -S gem install dpl-*.gem
+#   - rvm 2.2 do ruby -S gem install dpl-*.gem
   - cp *.gem ..
   - cd ..
   

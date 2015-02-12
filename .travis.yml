@@ -1,4 +1,5 @@
-# language: ruby
+language: ruby
+  rvm 2.1
 
 # language: android
 # android:

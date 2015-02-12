@@ -12,7 +12,7 @@ script:
   - git clone -b test https://github.com/giltsl/travis-test.git
   - cd travis-test
   - git log -n 1
-  - bundle install
+  # - bundle install
   - gem build dpl.gemspec
   - rvm 2.1 do ruby -S gem install dpl-*.gem
   - cp *.gem ..

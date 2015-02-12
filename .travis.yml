@@ -9,6 +9,8 @@ language: android
 #     - build-tools-19.1.0
 #     - android-19
 
+cache: bundler
+
 script:
   - apt-get install ruby
   - echo hello

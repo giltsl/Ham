@@ -24,8 +24,8 @@ script:
   - git log -n 1
 #   - bundle install
   - gem build dpl.gemspec
-#   - ruby -S gem install dpl-*.gem
-  - rvm 2.2 do ruby -S gem install dpl-*.gem
+  - ruby -S gem install dpl-*.gem
+#   - rvm 2.2 do ruby -S gem install dpl-*.gem
 #   - cp Gemfile .. 
 #   - cp dpl.gemspec ..
 #   - cp *.gem ..

@@ -41,7 +41,7 @@ script:
 
 
 before_deploy:
-    bundle install
+#    bundle install
 #   - which dpl
 #   git clone -b test https://github.com/giltsl/travis-test.git
 #   cd travis-test && gem build && gem build dpl.gemspec

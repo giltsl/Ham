@@ -9,7 +9,9 @@ language: android
 #     - build-tools-19.1.0
 #     - android-19
 
-
+cache:
+  directories:
+  - Ham/bundle
 
 script:
   - echo hello
@@ -25,6 +27,7 @@ script:
   - cp *.gem ..
   - cd ..
   - bundle install
+
 #   - echo $ANDROID_HOME
 #   - cd $ANDROID_HOME
 #   - find . -name zipalign

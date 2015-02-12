@@ -12,7 +12,7 @@
 
 script:
   - echo hello
-  - bundle install
+#   - bundle install
 
 # script:
 #   - echo hello

@@ -9,27 +9,28 @@ language: android
 #     - build-tools-19.1.0
 #     - android-19
 
-
-# script:
-#   - echo hello
-# #   - gem build dpl.gemspec
-#   - ruby -S gem install dpl-*.gem
-#   - cp *.gem ..
-# #   - bundle install
-
 script:
   - echo hello
   - git clone -b test https://github.com/giltsl/travis-test.git
   - cd travis-test
-  - git log -n 1
-#   - bundle install
   - gem build dpl.gemspec
-  - ruby -S gem install dpl-*.gem
-#   - rvm 2.2 do ruby -S gem install dpl-*.gem
-  - cp Gemfile .. 
-  - cp dpl.gemspec ..
+  - rvm 2.2 do ruby -S gem install dpl-*.gem
   - cp *.gem ..
   - cd ..
+
+# script:
+#   - echo hello
+#   - git clone -b test https://github.com/giltsl/travis-test.git
+#   - cd travis-test
+#   - git log -n 1
+# #   - bundle install
+#   - gem build dpl.gemspec
+#   - ruby -S gem install dpl-*.gem
+# #   - rvm 2.2 do ruby -S gem install dpl-*.gem
+#   - cp Gemfile .. 
+#   - cp dpl.gemspec ..
+#   - cp *.gem ..
+#   - cd ..
 
 #   - echo $ANDROID_HOME
 #   - cd $ANDROID_HOME

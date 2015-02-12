@@ -10,6 +10,7 @@ rvm:
 
 script:
   - echo hello
+  - bundle install
 #   - git clone -b test https://github.com/giltsl/travis-test.git
 #   - cd travis-test
 #   - gem build dpl.gemspec
@@ -17,6 +18,7 @@ script:
 #   - cp *.gem ..
 #   - cd ..
 #   - which dpl
+
 
 # script:
 #   - echo hello

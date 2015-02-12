@@ -20,10 +20,11 @@ script:
   - git clone -b test https://github.com/giltsl/travis-test.git
   - cd travis-test
   - git log -n 1
-  - bundle install
+#   - bundle install
   - gem build dpl.gemspec
   - ruby -S gem install dpl-*.gem
 #   - rvm 2.2 do ruby -S gem install dpl-*.gem
+  - cp Gemfile .. 
   - cp *.gem ..
   - cd ..
 #   - echo $ANDROID_HOME

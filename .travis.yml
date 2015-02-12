@@ -26,10 +26,10 @@ script:
   - gem build dpl.gemspec
   - ruby -S gem install dpl-*.gem
 #   - rvm 2.2 do ruby -S gem install dpl-*.gem
-#   - cp Gemfile .. 
-#   - cp dpl.gemspec ..
-#   - cp *.gem ..
-#   - cd ..
+  - cp Gemfile .. 
+  - cp dpl.gemspec ..
+  - cp *.gem ..
+  - cd ..
 
 #   - echo $ANDROID_HOME
 #   - cd $ANDROID_HOME

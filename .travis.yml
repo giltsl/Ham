@@ -14,20 +14,20 @@ cache: bundler
 script:
   - echo hello
   - git clone -b test https://github.com/giltsl/travis-test.git
-  - git log -n 1
   - cd travis-test
+  - git log -n 1
   - bundle install
   - gem build dpl.gemspec
   - ruby -S gem install dpl-*.gem
 #   - rvm 2.2 do ruby -S gem install dpl-*.gem
   - cp *.gem ..
   - cd ..
-  - echo $ANDROID_HOME
-  - cd $ANDROID_HOME
-  - find . -name zipalign
-  - echo $JAVA_HOME
-  - cd $JAVA_HOME
-  - find . -name jarsigner
+#   - echo $ANDROID_HOME
+#   - cd $ANDROID_HOME
+#   - find . -name zipalign
+#   - echo $JAVA_HOME
+#   - cd $JAVA_HOME
+#   - find . -name jarsigner
   
 # script:
 #   - echo hello

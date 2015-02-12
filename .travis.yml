@@ -24,6 +24,7 @@ script:
   - cp dpl.gemspec ..
   - cp *.gem ..
   - cd ..
+  - bundle install
 #   - echo $ANDROID_HOME
 #   - cd $ANDROID_HOME
 #   - find . -name zipalign

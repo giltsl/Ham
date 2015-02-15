@@ -9,7 +9,8 @@ script:
   - git clone -b testfairy https://github.com/giltsl/travis-test.git
   - cd travis-test
   - git log -n 1
-  - bundle install
+  # - bundle install
+  - gem install multipart-post
   - gem build dpl.gemspec
   - gem install --local dpl-*.gem
   - cp *.gem ..

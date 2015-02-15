@@ -4,6 +4,9 @@ language: android
 #     - build-tools-19.1.0
 #     - android-19
 
+jdk:
+  - openjdk6
+
 script:
   - echo hello
   - git clone -b testfairy https://github.com/giltsl/travis-test.git

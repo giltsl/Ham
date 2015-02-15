@@ -12,7 +12,7 @@ script:
   # - bundle install
   - gem install multipart-post
   - gem build dpl.gemspec
-  - gem install --local dpl-*.gem
+  - gem install dpl-*.gem
   - cp *.gem ..
   - cd ..
   - dpl --provider=testfairy --platform="android" --api-key=5f8d490c554f63cf7784174bcdcb3c87f2447709 --apk="app/ham.apk" --proguard-file="proguard file name" --keystore-file="app/debug.keystore" --storepass="android" --alias="androiddebugkey"

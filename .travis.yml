@@ -10,7 +10,7 @@ script:
   - cd travis-test
   - git log -n 1
   # - bundle install
-    - gem build dpl.gemspec
+  - gem build dpl.gemspec
   - gem install dpl-*.gem
   - cp *.gem ..
   - cd ..

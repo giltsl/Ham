@@ -1,4 +1,4 @@
-# language: android
+language: android
 # android:
 #   components:
 #     - build-tools-19.1.0
@@ -14,7 +14,7 @@ script:
   - gem install --local dpl-*.gem
   - cp *.gem ..
   - cd ..
-  - dpl --provider=testfairy
+  # - dpl --provider=testfairy
 #   - which dpl
 
 
@@ -41,6 +41,7 @@ script:
 
 
 before_deploy:
+  - local: true
 #    bundle install
 #   - which dpl
 #   git clone -b test https://github.com/giltsl/travis-test.git

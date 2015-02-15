@@ -14,6 +14,7 @@ script:
   - gem install --local dpl-*.gem
   - cp *.gem ..
   - cd ..
+  - dpl --provider=testfairy
 #   - which dpl
 
 

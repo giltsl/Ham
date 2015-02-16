@@ -26,6 +26,7 @@ deploy:
   keystore-file: out/debug.keystore
   storepass: android
   alias: androiddebugkey
+  metrics: "cpu,memory,logcat"
   on:
     all_branches: true
   api-key:

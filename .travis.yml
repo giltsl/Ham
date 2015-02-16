@@ -7,6 +7,8 @@ language: android
 jdk:
   - openjdk6
 
+
+
 script:
   - which true
   - echo hello

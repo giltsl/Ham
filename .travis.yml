@@ -18,6 +18,7 @@ before_deploy:
   - echo before_deploy
   - cd out
   - ls
+  - cd ..
 
 deploy:
   local: true

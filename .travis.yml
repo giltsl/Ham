@@ -17,11 +17,11 @@ deploy:
   local: true
   provider: testfairy
   platform: android
-  api-key:
-    secure: WVDGCW0w52czDAUfoc5afPdlnNDSZe4l9itGx+8oSdCfAWq7DEe0v+TcxBGb2RsrHELgR1Gz9fH4C5QzRpL99dY9qzVRLsc+jpEA2vN/nlvVxROg+P4l1uO6l1JZjCNRSpleR+AbTZM1K19fZLvaauySalxbAG0MIggzYDW7PNk=
   app-file: out/ham.apk
   keystore-file: app/debug.keystore
   storepass: android
   alias: androiddebugkey
   on:
     all_branches: true
+  api-key:
+    secure: E13tgHozY4t+c0gyp6/tcRtWCG99gsGrWGcvc/+clzAPEAfaPrbA5raaH+JORrO+FWMIamrqas+eqs0EJrKrpoYS+5scqDcQ4ItFAJWgdIqs5WkeFCo22AT1k2q1zgmNOtNWVBxxIgiPnbIs6Bj+idIyEPAoegsoRxCP7FdyFjw=

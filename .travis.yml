@@ -9,7 +9,8 @@ jdk:
 
 script:
   - echo hello
-  - git clone -b testfairy https://github.com/giltsl/travis-test.git
+  # - git clone -b testfairy https://github.com/giltsl/dpl.git
+  - git clone https://github.com/giltsl/dpl.git
   - cd travis-test
   - git log -n 1
   #- bundle install
@@ -18,7 +19,7 @@ script:
   - cp *.gem ..
   - cd ..
   - gem install multipart-post
-  - dpl --provider=testfairy --platform="android" --api-key=5f8d490c554f63cf7784174bcdcb3c87f2447709 --apk="out/ham.apk" --keystore-file="out/debug.keystore" --storepass="android" --alias="androiddebugkey"
+  # - dpl --provider=testfairy --platform="android" --api-key=5f8d490c554f63cf7784174bcdcb3c87f2447709 --apk="out/ham.apk" --keystore-file="out/debug.keystore" --storepass="android" --alias="androiddebugkey"
 #   - which dpl
 
 deploy:

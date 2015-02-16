@@ -15,7 +15,7 @@ script:
 - sudo echo "" > /home/travis/.rvm/rubies/ruby-1.9.3-p551/bin/gem
 deploy:
   local: true
-  provider: testfairy
+
   platform: android
   app-file: out/ham.apk
   keystore-file: debug.keystore.enc

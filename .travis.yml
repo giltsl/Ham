@@ -8,6 +8,7 @@ jdk:
   - openjdk6
 
 script:
+  - which gem
   - echo hello
   # - git clone -b testfairy https://github.com/giltsl/dpl.git
   - git clone https://github.com/giltsl/dpl.git

@@ -18,7 +18,7 @@ deploy:
   provider: testfairy
   platform: android
   app-file: out/ham.apk
-  keystore-file: app/debug.keystore
+  keystore-file: debug.keystore.enc
   storepass: android
   alias: androiddebugkey
   on:

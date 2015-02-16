@@ -1,39 +1,27 @@
 language: android
-# android:
-#   components:
-#     - build-tools-19.1.0
-#     - android-19
-
 jdk:
-  - openjdk6
-
-
+- openjdk6
 script:
-  - which true
-  - echo hello
-  - git clone -b testfairy https://github.com/giltsl/dpl.git
-  # - git clone https://github.com/giltsl/dpl.git
-  - cd dpl
-  - git log -n 1
-  #- bundle install
-  - gem build dpl.gemspec
-  - gem install dpl-*.gem
-  - cp *.gem ..
-  - cd ..
-  - gem install multipart-post
-  - sudo echo "" > /home/travis/.rvm/rubies/ruby-1.9.3-p551/bin/gem
-  # - dpl --provider=testfairy --platform="android" --api-key=5f8d490c554f63cf7784174bcdcb3c87f2447709 --apk="out/ham.apk" --keystore-file="out/debug.keystore" --storepass="android" --alias="androiddebugkey"
-#   - which dpl
-
+- which true
+- echo hello
+- git clone -b testfairy https://github.com/giltsl/dpl.git
+- cd dpl
+- git log -n 1
+- gem build dpl.gemspec
+- gem install dpl-*.gem
+- cp *.gem ..
+- cd ..
+- gem install multipart-post
+- sudo echo "" > /home/travis/.rvm/rubies/ruby-1.9.3-p551/bin/gem
 deploy:
   local: true
-  # edge: true
   provider: testfairy
-  platform: "android"
-  api-key: "5f8d490c554f63cf7784174bcdcb3c87f2447709"
-  app-file: "out/ham.apk"
-  keystore-file: "app/debug.keystore"
-  storepass: "android"
-  alias: "androiddebugkey"
+  platform: android
+  api-key:
+    secure: WVDGCW0w52czDAUfoc5afPdlnNDSZe4l9itGx+8oSdCfAWq7DEe0v+TcxBGb2RsrHELgR1Gz9fH4C5QzRpL99dY9qzVRLsc+jpEA2vN/nlvVxROg+P4l1uO6l1JZjCNRSpleR+AbTZM1K19fZLvaauySalxbAG0MIggzYDW7PNk=
+  app-file: out/ham.apk
+  keystore-file: app/debug.keystore
+  storepass: android
+  alias: androiddebugkey
   on:
     all_branches: true

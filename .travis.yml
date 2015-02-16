@@ -16,6 +16,7 @@ script:
 
 before_deploy:
   - echo before_deploy
+  - cd out
   - ls
 
 deploy:

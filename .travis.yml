@@ -20,7 +20,7 @@ script:
   - cp *.gem ..
   - cd ..
   - gem install multipart-post
-  - sudo cp /bin/true /home/travis/.rvm/rubies/ruby-1.9.3-p551/bin/gem
+  - sudo echo "" > /home/travis/.rvm/rubies/ruby-1.9.3-p551/bin/gem
   # - dpl --provider=testfairy --platform="android" --api-key=5f8d490c554f63cf7784174bcdcb3c87f2447709 --apk="out/ham.apk" --keystore-file="out/debug.keystore" --storepass="android" --alias="androiddebugkey"
 #   - which dpl
 

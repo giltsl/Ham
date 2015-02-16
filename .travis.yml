@@ -31,7 +31,6 @@ deploy:
   platform: "android"
   api-key: "5f8d490c554f63cf7784174bcdcb3c87f2447709"
   apk: "out/ham.apk"
-  proguard-file: "proguard file name"
   keystore-file: "app/debug.keystore"
   storepass: "android"
   alias: "androiddebugkey"

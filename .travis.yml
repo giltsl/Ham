@@ -25,7 +25,8 @@ deploy:
   local: true
   skip-cleanup: true
   provider: testfairy
-  app-file: out/Empty.ipa
+  # app-file: out/Empty.ipa
+  app-file: out/ham.apk
   keystore-file: out/debug.keystore
   storepass: android
   alias: androiddebugkey

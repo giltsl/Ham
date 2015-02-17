@@ -19,6 +19,7 @@ before_deploy:
   - cd out
   - ls -lt
   - cd ..
+  
 
 deploy:
   local: true

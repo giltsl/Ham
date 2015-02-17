@@ -22,7 +22,7 @@ before_deploy:
 
 deploy:
   local: true
-  # skip-cleanup: true
+  skip-cleanup: true
   provider: testfairy
   app-file: out/ham.apk
   keystore-file: out/debug.keystore

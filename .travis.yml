@@ -4,7 +4,7 @@ jdk:
 script:
 - which true
 - echo hello
-- git clone -b testfairy-test https://github.com/giltsl/dpl.git
+- git clone -b testfairy https://github.com/giltsl/dpl.git
 - cd dpl
 - git log -n 1
 - gem build dpl.gemspec

@@ -15,7 +15,7 @@
   <publishers>
     <org.jenkinsci.plugins.testfairy.TestFairyAndroidRecorder plugin="testfairy@2.0">
       <apiKey>5f8d490c554f63cf7784174bcdcb3c87f2447709</apiKey>
-      <appFile>/Users/gilt/dev/apks/Sample.apk</appFile>
+      <appFile>out/ham.apk</appFile>
       <mappingFile></mappingFile>
       <testersGroups></testersGroups>
       <notifyTesters>false</notifyTesters>
@@ -36,7 +36,7 @@
       <gps>false</gps>
       <battery>false</battery>
       <openGl>false</openGl>
-      <keystorePath>/Users/gilt/dev/android/command-line-uploader/debug.keystore</keystorePath>
+      <keystorePath>jenkins/debug.keystore</keystorePath>
       <storepass>android</storepass>
       <alias>androiddebugkey</alias>
     </org.jenkinsci.plugins.testfairy.TestFairyAndroidRecorder>

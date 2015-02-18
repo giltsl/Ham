@@ -4,7 +4,7 @@ curl -Lo jenkins.war http://mirrors.jenkins-ci.org/war/latest/jenkins.war
 ls;
 
 java -jar jenkins.war&
-sleep 15
+sleep 45
 
 ls ~/.jenkins/war/WEB-INF/jenkins-cli.jar
 java -jar ~/.jenkins/war/WEB-INF/jenkins-cli.jar -s http://localhost:8080/ install-plugin TestFairy.hpi

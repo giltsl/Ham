@@ -20,7 +20,7 @@ while true; do
 
     echo check FAILURE
     grep "Finished: FAILURE" /tmp/console.log
-    if [[ $? == 0 ]]; then
+    if [ $? == 0 ]; then
         echo Finished: FAILURE
         cat /tmp/console.log
         exit -1;
@@ -28,7 +28,7 @@ while true; do
 
     echo check SUCCESS
     grep "Finished: SUCCESS" /tmp/console.log
-    if [[ $? == 0 ]]; then
+    if [ $? == 0 ]; then
         echo Yay the build work
         exit 0;
     fi

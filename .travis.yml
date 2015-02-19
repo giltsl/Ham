@@ -10,10 +10,12 @@ jdk:
 script:
     - echo $ANDROID_HOME
     - find $ANDROID_HOME -name zipalign
+    - sudo cp $ANDROID_HOME/build-tools/19.1.0/zipalign /bin/
+    - which zipalign
     # sdk/build-tools/21.0.1/
-    # - cd jenkins
-    # - bash ./jenkins_test.sh
-    # - cd ..
+    - cd jenkins
+    - bash ./jenkins_test.sh
+    - cd ..
 
 deploy:
   on:

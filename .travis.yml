@@ -7,8 +7,8 @@ jdk:
   # - openjdk7
 
 script:
-    echo $ANDROID_HOME
-    fild $ANDROID_HOME -name zipalign
+    - echo $ANDROID_HOME
+    - find $ANDROID_HOME -name zipalign
     # sdk/build-tools/21.0.1/
     # - cd jenkins
     # - bash ./jenkins_test.sh

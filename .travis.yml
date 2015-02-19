@@ -28,7 +28,7 @@ script:
    #- java -jar ~/.jenkins/war/WEB-INF/jenkins-cli.jar -s http://localhost:8080/ console JenkinsTest
 
     - cd jenkins
-    - sh jenkins_test.sh
+    - bash ./jenkins_test.sh
     - cd ..
 
 deploy:

@@ -30,10 +30,9 @@ while true; do
 
     echo check SUCCESS
     grep "Finished: SUCCESS" /tmp/console.log
-    if [ grep "Finished: SUCCESS" /tmp/console.log == 0 ]; then
+    if [ $? == 0 ]; then
         echo Yay the build work
         exit 0;
     fi
-
 
 done

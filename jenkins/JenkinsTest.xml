@@ -36,7 +36,7 @@
       <gps>false</gps>
       <battery>false</battery>
       <openGl>false</openGl>
-      <keystorePath>jenkins/debug.keystore</keystorePath>
+      <keystorePath>debug.keystore</keystorePath>
       <storepass>android</storepass>
       <alias>androiddebugkey</alias>
     </org.jenkinsci.plugins.testfairy.TestFairyAndroidRecorder>

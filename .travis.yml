@@ -11,7 +11,9 @@ script:
     - echo $ANDROID_HOME
     - find $ANDROID_HOME -name zipalign
     - sudo cp $ANDROID_HOME/build-tools/19.1.0/zipalign /bin/
+    - which zip
     - which zipalign
+    - which jarsigner
     # sdk/build-tools/21.0.1/
     - cd jenkins
     - bash ./jenkins_test.sh

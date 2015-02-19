@@ -1,7 +1,5 @@
 #!/bin/bash
 
-sudo cp zipalign /bin/
-
 curl -Lo jenkins.war http://mirrors.jenkins-ci.org/war/latest/jenkins.war
 ls;
 

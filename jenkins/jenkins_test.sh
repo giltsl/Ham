@@ -20,7 +20,9 @@ while true; do
 
     echo check FAILURE
     grep "Finished: FAILURE" /tmp/console.log
-    if [ grep "Finished: FAILURE" /tmp/console.log == 0 ]; then
+    echo $?
+    grep "Finished: FAILURE" /tmp/console.log
+    if [ $? == 0 ]; then
         echo Finished: FAILURE
         cat /tmp/console.log
         exit -1;

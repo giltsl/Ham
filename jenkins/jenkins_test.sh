@@ -17,10 +17,8 @@ while true; do
 
     java -jar ~/.jenkins/war/WEB-INF/jenkins-cli.jar -s http://localhost:8080/ console JenkinsTest > /tmp/console.log
     sleep 1
-
-    echo check FAILURE
-    grep "Finished: FAILURE" /tmp/console.log
-    echo $?
+    echo console...
+    echo /tmp/console.log
     grep "Finished: FAILURE" /tmp/console.log
     if [ $? == 0 ]; then
         echo Finished: FAILURE

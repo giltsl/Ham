@@ -1,32 +1,9 @@
 language: java
 jdk:
   - oraclejdk7
-  # - openjdk7
+  - openjdk7
 
 script:
-  # - curl -Lo jenkins.war http://mirrors.jenkins-ci.org/war/latest/jenkins.war
-  #- ls
-  #- java -jar jenkins.war &
-  # - sleep 5m
-  # - ls ~/.jenkins/war/WEB-INF/jenkins-cli.jar
-  # - java -jar ~/.jenkins/war/WEB-INF/jenkins-cli.jar -s http://localhost:8080/ install-plugin jenkins/TestFairy.hpi
-  # - java -jar ~/.jenkins/war/WEB-INF/jenkins-cli.jar -s http://localhost:8080/ create-job JenkinsTest < jenkins/JenkinsTest.xml
-  # - java -jar ~/.jenkins/war/WEB-INF/jenkins-cli.jar -s http://localhost:8080/ list-jobs
-   #- java -jar ~/.jenkins/war/WEB-INF/jenkins-cli.jar -s http://localhost:8080/ build JenkinsTest
-   #- java -jar ~/.jenkins/war/WEB-INF/jenkins-cli.jar -s http://localhost:8080/ console JenkinsTest
-   #- sleep 5
-   #- echo console 1
-   #- java -jar ~/.jenkins/war/WEB-INF/jenkins-cli.jar -s http://localhost:8080/ console JenkinsTest
-   #- sleep 5
-   #- echo console 2
-   #- java -jar ~/.jenkins/war/WEB-INF/jenkins-cli.jar -s http://localhost:8080/ console JenkinsTest
-   #- sleep 5
-   #- echo console 3
-   #- java -jar ~/.jenkins/war/WEB-INF/jenkins-cli.jar -s http://localhost:8080/ console JenkinsTest
-   #- sleep 5
-   #- echo console 4
-   #- java -jar ~/.jenkins/war/WEB-INF/jenkins-cli.jar -s http://localhost:8080/ console JenkinsTest
-
     - cd jenkins
     - bash ./jenkins_test.sh
     - cd ..

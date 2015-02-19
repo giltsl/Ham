@@ -19,7 +19,7 @@ script:
     - bash ./jenkins_test.sh
     - cd ..
 
-deploy:
-  on:
-    all_branches: true
+# deploy:
+#   on:
+#     all_branches: true
 

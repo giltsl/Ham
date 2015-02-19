@@ -16,9 +16,9 @@ java -jar ~/.jenkins/war/WEB-INF/jenkins-cli.jar -s http://localhost:8080/ build
 while true; do
 
     java -jar ~/.jenkins/war/WEB-INF/jenkins-cli.jar -s http://localhost:8080/ console JenkinsTest > /tmp/console.log
-    sleep 1
+    sleep 2
     echo console...
-    echo /tmp/console.log
+    cat /tmp/console.log
     grep "Finished: FAILURE" /tmp/console.log
     if [ $? == 0 ]; then
         echo Finished: FAILURE

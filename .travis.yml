@@ -4,6 +4,7 @@ language: php
 script:
 # - which true
 - echo hello
+- sudo gem install multipart-post
 # - git clone https://github.com/testfairy/dpl.git
 # - cd dpl
 # - git log -n 1

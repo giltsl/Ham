@@ -19,7 +19,7 @@ before_deploy:
   # - cd out
   # - ls -lt
   # - cd ..
-  - sudo gem install multipart-post
+  - gem install multipart-post
   
 
 deploy:

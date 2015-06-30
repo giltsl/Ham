@@ -21,16 +21,16 @@ before_deploy:
   - cd ..
   
 
-deploy:
-  provider: testfairy
+# deploy:
+  # provider: testfairy
   # app-file: out/ham.apk
   # keystore-file: out/debug.keystore
   # storepass: android
   # alias: androiddebugkey
   # metrics: "cpu,memory,logcat"
   # api-key: "5f8d490c554f63cf7784174bcdcb3c87f2447709"
-  on:
-    all_branches: true
+  # on:
+    # all_branches: true
   
   # local: true
   # skip-cleanup: true

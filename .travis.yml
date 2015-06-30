@@ -1,4 +1,4 @@
-language: php
+language: android
 # jdk:
 # - openjdk6
 script:

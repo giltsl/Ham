@@ -24,7 +24,7 @@ before_deploy:
 
 deploy:
 # - provider: cloudcontrol
-- provider: testfairy
+# - provider: testfairy
   # app-file: out/ham.apk
   # keystore-file: out/debug.keystore
   # storepass: android
@@ -33,6 +33,18 @@ deploy:
   # api-key: "5f8d490c554f63cf7784174bcdcb3c87f2447709"
   # on:
     # all_branches: true
-  
   # local: true
   # skip-cleanup: true
+  provider: testfairy
+  app-file: out/ham.apk
+  keystore-file: out/debug.keystore
+  storepass: android
+  alias: androiddebugkey
+  metrics: "cpu,memory,logcat"
+  on:
+    all_branches: true
+  api-key:
+    secure: E13tgHozY4t+c0gyp6/tcRtWCG99gsGrWGcvc/+clzAPEAfaPrbA5raaH+JORrO+FWMIamrqas+eqs0EJrKrpoYS+5scqDcQ4ItFAJWgdIqs5WkeFCo22AT1k2q1zgmNOtNWVBxxIgiPnbIs6Bj+idIyEPAoegsoRxCP7FdyFjw=
+before_install:
+- openssl aes-256-cbc -K $encrypted_2a19ebee9a0c_key -iv $encrypted_2a19ebee9a0c_iv
+  -in debug.keystore.enc -out out/debug.keystore -d

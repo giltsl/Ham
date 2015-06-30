@@ -1,4 +1,4 @@
-language: php
+# language: php
 # jdk:
 # - openjdk6
 # script:
@@ -21,7 +21,8 @@ before_deploy:
   - cd ..
   
 
-# deploy:
+deploy:
+- provider: cloudcontrol
   # provider: testfairy
   # app-file: out/ham.apk
   # keystore-file: out/debug.keystore

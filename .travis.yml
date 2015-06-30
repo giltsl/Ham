@@ -23,7 +23,7 @@
 
 deploy:
   # local: true
-  # skip-cleanup: true
+  skip-cleanup: true
   provider: testfairy
   # app-file: out/Empty.ipa
   app-file: out/ham.apk
@@ -31,6 +31,7 @@ deploy:
   storepass: android
   alias: androiddebugkey
   metrics: "cpu,memory,logcat"
+  api-key: "5f8d490c554f63cf7784174bcdcb3c87f2447709"
   on:
     all_branches: true
-  api-key: "5f8d490c554f63cf7784174bcdcb3c87f2447709"
+  

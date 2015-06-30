@@ -22,8 +22,8 @@ before_deploy:
   
 
 deploy:
-- provider: cloudcontrol
-  # provider: testfairy
+# - provider: cloudcontrol
+  provider: testfairy
   # app-file: out/ham.apk
   # keystore-file: out/debug.keystore
   # storepass: android

@@ -14,27 +14,12 @@ script:
 # - gem install multipart-post
 # - sudo echo "" > /home/travis/.rvm/rubies/ruby-1.9.3-p551/bin/gem
 
-before_deploy:
-  - echo before_deploy
-  # - cd out
-  # - ls -lt
-  # - cd ..
-  - gem install multipart-post
+# before_deploy:
+#   - echo before_deploy
+#   - gem install multipart-post
   
 
 deploy:
-# - provider: cloudcontrol
-# - provider: testfairy
-  # app-file: out/ham.apk
-  # keystore-file: out/debug.keystore
-  # storepass: android
-  # alias: androiddebugkey
-  # metrics: "cpu,memory,logcat"
-  # api-key: "5f8d490c554f63cf7784174bcdcb3c87f2447709"
-  # on:
-    # all_branches: true
-  # local: true
-  # skip-cleanup: true
   provider: testfairy
   app-file: out/ham.apk
   keystore-file: out/debug.keystore

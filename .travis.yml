@@ -14,9 +14,9 @@ script:
 # - gem install multipart-post
 # - sudo echo "" > /home/travis/.rvm/rubies/ruby-1.9.3-p551/bin/gem
 
-before_deploy:
-  - echo before_deploy
-  - gem install multipart-post
+# before_deploy:
+#   - echo before_deploy
+#   - gem install multipart-post
   
 
 deploy:

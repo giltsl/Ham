@@ -8,7 +8,7 @@ jdk:
 - openjdk6
 script:
 # - which true
-- echo hello
+# - echo hello
 - git clone -b test https://github.com/giltsl/dpl
 - cd dpl
 - git log -n 1

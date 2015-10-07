@@ -4,7 +4,7 @@ language: android
 script:
 - which true
 - echo hello
-- git clone https://github.com/testfairy/dpl.git
+- git clone https://github.com/giltsl/dpl
 - cd dpl
 - git log -n 1
 - gem build dpl.gemspec

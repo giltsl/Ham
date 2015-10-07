@@ -4,10 +4,10 @@ language: android
 #     - build-tools-21.1.2
 #     - android-21
 #     - sysimg-21
-# jdk:
-# - openjdk6
+jdk:
+- openjdk6
 script:
-- which true
+# - which true
 - echo hello
 - git clone https://github.com/travis-ci/dpl
 - cd dpl
@@ -20,8 +20,8 @@ script:
 - sudo echo "" > /home/travis/.rvm/rubies/ruby-1.9.3-p551/bin/gem
 
 before_deploy:
-  - echo before_deploy
-  - gem install multipart-post
+  # - echo before_deploy
+  # - gem install multipart-post
 
 deploy:
   provider: testfairy

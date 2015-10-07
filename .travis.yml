@@ -1,7 +1,7 @@
 language: android
 # jdk:
 # - openjdk6
-script:
+# script:
 # - which true
 # - echo hello
 # - git clone https://github.com/giltsl/dpl

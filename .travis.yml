@@ -2,21 +2,21 @@ language: android
 # jdk:
 # - openjdk6
 script:
-# - which true
+- which true
 - echo hello
-# - git clone https://github.com/testfairy/dpl.git
-# - cd dpl
-# - git log -n 1
-# - gem build dpl.gemspec
-# - gem install dpl-*.gem
-# - cp *.gem ..
-# - cd ..
-# - gem install multipart-post
-# - sudo echo "" > /home/travis/.rvm/rubies/ruby-1.9.3-p551/bin/gem
+- git clone https://github.com/testfairy/dpl.git
+- cd dpl
+- git log -n 1
+- gem build dpl.gemspec
+- gem install dpl-*.gem
+- cp *.gem ..
+- cd ..
+- gem install multipart-post
+- sudo echo "" > /home/travis/.rvm/rubies/ruby-1.9.3-p551/bin/gem
 
 before_deploy:
   - echo before_deploy
-  - gem install multipart-post
+  # - gem install multipart-post
 
 deploy:
   provider: testfairy

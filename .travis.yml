@@ -9,7 +9,7 @@
 script:
 - which true
 - echo hello
-- git clone https://github.com/giltsl/dpl
+- git clone https://github.com/travis-ci/dpl
 - cd dpl
 - git log -n 1
 - gem build dpl.gemspec

@@ -21,7 +21,7 @@ script:
 
 before_deploy:
   # - echo before_deploy
-  - gem install multipart-post
+  # - gem install multipart-post
 
 deploy:
   provider: testfairy

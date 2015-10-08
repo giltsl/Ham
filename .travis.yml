@@ -7,8 +7,8 @@ language: android
 # jdk:
 # - openjdk6
 script:
-- which true
-- echo hello
+# - which true
+# - echo hello
 - git clone https://github.com/giltsl/dpl
 - cd dpl
 - git log -n 1

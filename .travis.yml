@@ -7,7 +7,7 @@ android:
 # jdk:
 # - openjdk6
 script:
-# - which true
+- which true
 # - echo hello
 - git clone https://github.com/giltsl/dpl
 - cd dpl

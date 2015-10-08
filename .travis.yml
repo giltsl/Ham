@@ -7,9 +7,9 @@ language: android
 # jdk:
 # - openjdk6
 script:
-# # - which true
+- which true
 - echo hello
-- git clone -b test https://github.com/giltsl/dpl
+- git clone https://github.com/giltsl/dpl
 - cd dpl
 - git log -n 1
 - gem build dpl.gemspec

@@ -9,7 +9,7 @@ android:
 # - openjdk6
 script:
 - which true
-# - echo hello
+- echo hello
 
 # before_deploy:
 # - gem uninstall dpl

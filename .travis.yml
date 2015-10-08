@@ -10,6 +10,9 @@ android:
 script:
 - which true
 # - echo hello
+
+before_deploy:
+- gem uninstall dpl
 - git clone https://github.com/giltsl/dpl
 - cd dpl
 - git log -n 1
@@ -20,7 +23,7 @@ script:
 # - gem install multipart-post
 # - sudo echo "" > /home/travis/.rvm/rubies/ruby-1.9.3-p551/bin/gem
 
-before_deploy:
+# before_deploy:
   # - echo before_deploy
   # - gem install multipart-post
 

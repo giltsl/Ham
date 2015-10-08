@@ -29,7 +29,8 @@ script:
 
 deploy:
   edge:
-    source: testfairy/dpl
+    source: giltsl/dpl
+    # source: testfairy/dpl
   provider: testfairy
   app-file: out/ham.apk
   keystore-file: out/debug.keystore

@@ -28,9 +28,9 @@ script:
   # - gem install multipart-post
 
 deploy:
-  # edge:
-    # source: testfairy/dpl
-    # source: testfairy/dpl
+  edge:
+    source: testfairy/dpl
+    branch: master
   provider: testfairy
   app-file: out/ham.apk
   keystore-file: out/debug.keystore

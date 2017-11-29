@@ -30,7 +30,7 @@ script:
 deploy:
   edge:
     source: testfairy/dpl
-    branch: master
+    branch: feat-testfairy-simple
   provider: testfairy
   app-file: out/ham.apk
   keystore-file: out/debug.keystore

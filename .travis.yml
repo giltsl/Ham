@@ -1,46 +1,10 @@
-language: android
-sudo: true
-android:
-  components:
-    - build-tools-21.1.2
-#     - android-21
-#     - sysimg-21
-# jdk:
-# - openjdk6
-script:
-# - which true
-- echo hello
-
-# before_deploy:
-# - gem uninstall dpl
-# - git clone https://github.com/giltsl/dpl
-# - cd dpl
-# - git log -n 1
-# - gem build dpl.gemspec
-# - gem install dpl-*.gem
-# - cp *.gem ..
-# - cd ..
-# - gem install multipart-post
-# - sudo echo "" > /home/travis/.rvm/rubies/ruby-1.9.3-p551/bin/gem
-
-# before_deploy:
-  # - echo before_deploy
-  # - gem install multipart-post
-
-deploy:
-  edge:
-    source: testfairy/dpl
-    branch: feat-testfairy-simple
-  provider: testfairy
-  app-file: out/ham.apk
-  keystore-file: out/debug.keystore
-  storepass: android
-  alias: androiddebugkey
-  metrics: "cpu,memory,logcat"
-  on:
-    all_branches: true
-  api-key:
-    secure: E13tgHozY4t+c0gyp6/tcRtWCG99gsGrWGcvc/+clzAPEAfaPrbA5raaH+JORrO+FWMIamrqas+eqs0EJrKrpoYS+5scqDcQ4ItFAJWgdIqs5WkeFCo22AT1k2q1zgmNOtNWVBxxIgiPnbIs6Bj+idIyEPAoegsoRxCP7FdyFjw=
-before_install:
-- openssl aes-256-cbc -K $encrypted_2a19ebee9a0c_key -iv $encrypted_2a19ebee9a0c_iv
-  -in debug.keystore.enc -out out/debug.keystore -d
+language: objective-c
+addons:
+  apt:
+    packages:
+      - oracle-java8-set-default
+      
+script: 
+  - echo $JAVA_HOME
+  - find / -name "*jdk*"
+  - exit

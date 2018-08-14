@@ -2,7 +2,7 @@ language: objective-c
 addons:
   apt:
     packages:
-     - openjdk-8-jre
+      openjdk-8-jre
       
 script: 
   - echo $JAVA_HOME
